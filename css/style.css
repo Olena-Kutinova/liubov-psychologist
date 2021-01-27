@@ -469,19 +469,19 @@ input[name="r"] {
   height: 100%;
 }
 
-#feedback1:checked~.s1 {
+#r1:checked~.s1 {
   margin-left: 0;
 }
 
-#feedback2:checked~.s1 {
+#r2:checked~.s1 {
   margin-left: -25%;
 }
 
-#feedback3:checked~.s1 {
+#r3:checked~.s1 {
   margin-left: -50%;
 }
 
-#feedback4:checked~.s1 {
+#r4:checked~.s1 {
   margin-left: -75%;
 }
 
