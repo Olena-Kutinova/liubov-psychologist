@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Логотерапевт Любов Долгова</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/fontawesome.css" rel="stylesheet">
+    <link href="css/brands.css" rel="stylesheet">
+    <link href="css/solid.css" rel="stylesheet">
+  </head>
+  <body>
+
+<!-- Navig-->
+    <div class="topnav" id="myTopnav">
+      <a href="#intro" class="active">Про мене</a>
+      <a href="#">Про логотерапію</a>
+      <a href="#form">Контакти</a>
+      <div class="dropdown">
+        <button class="dropbtn">Блог
+          <i class="fa fa-caret-down"></i>
+        </button>
+        <div class="dropdown-content">
+          <a href="#">Блог 1</a>
+          <a href="#">Блог 2</a>
+          <a href="#">Блог 3</a>
+        </div>
+      </div>
+      <a href="javascript:void(0);" class="icon-nav" onclick="myFunction()">&#9776;</a>
+    </div>
+    <script>
+    function myFunction() {
+      var x = document.getElementById("myTopnav");
+      if (x.className === "topnav") {
+        x.className += " responsive";
+      } else {
+        x.className = "topnav";
+      }
+    }
+    </script>
+
+    <main>
+<!-- Header-->
+  <header>
+  <section class="intro">
+    <div class="billboard-container">
+      <img src="images/liubov-dolhova-psychologist.jpg" class="billboard-image" alt="психолог-логотерапевт Любов Долгова" >
+      <div class="content-wrap">
+<div class="billboard-text">
+<h1>Логотерапевт Любов Долгова</h1>
+<h2>Шукаємо сенс життя разом</h2>
+</div>
+</div>
+</div>
+  </section>
+</header>
+
+<!-- Intro -->
+<section class="logoteraphy">
+      <div class="content-wrap">
+      <h2>Я психолог-логотерапевт</h2>
+      <p> Привіт, рада вітати Вас на своїй сторінці. Мене звати Любов, я – практикуючий екзистенційний психолог, сертифікований логотерапевт. Після отримання психологічної освіти в Україні, навчалася в Південнонімецькому інституті логотерапії і екзистенційного аналізу, і є одним з перших українських логотерапевтів.
+В своїй роботі я передусім орієнтуюся на сенс. Разом із пацієнтом ми шукаємо його унікальні смислові конструкції, щось, що наповнить його життя. Адже нам ніколи не достатньо просто бути; необхідною умовою людського щастя є бути для чогось. Я живу своєю роботою і роблю все, щоб мої пацієнти навчилися спиратися на свої внутрішні сили і відповідати ними на щоденні виклики, відчувати свої сенси і змістовність кожного дня, любити своє життя і себе в ньому. </p>
+</div>
+</section>
+
+<!-- Services -->
+      <section class="services">
+        <div class="content-wrap">
+        <h2>В яких ситуаціях я зможу допомогти</h2>
+        <div class="service-row">
+    <div class="service-column">
+      <img class="service-icon" img src="images/tear.png" alt="Пощук сенсу життя та призначення" >
+      <h2>Пощук сенсу життя та призначення</h2>
+      <p>Логотерапія створена, щоб припиняти страждання від беззмістовності.</p>
+    </div>
+    <div class="service-column">
+      <img class="service-icon" img src="images/broken-heart.png" alt="Переживання розриву відносин">
+      <h2>Переживання розриву відносин</h2>
+      <p>Коли старі сенси втрачаються, час відчувати нові.</p>
+    </div>
+    <div class="service-column">
+      <img class="service-icon" img src="images/pray.png" alt="Хвороба чи втрата близької людини">
+      <h2>Хвороба чи втрата близької людини</h2>
+      <p>Разом знайдемо світло в найтемніші часи.</p>
+    </div>
+  </div>
+        </div>
+      </section>
+
+<!--  Education -->
+        <section class="education">
+          <div class="content-wrap">
+            <h2>Освіта</h2>
+            <p>Моя перша вища психологічна освіта – Національний педагогічний університет ім. М.П. Драгоманова, спеціальність психологія.
+Друга - Süddeutsches Institut für Logotherapie & Existenzanalyse (Південнонімецький інститут логотерапії і екзистенційного аналізу, заснований ученицею Віктора Франкля Елізабет Лукас), спеціальність логотерапія.</p>
+          </div>
+<!-- image modal-->
+    <div class="content-wrap">
+        <h2>Мої дипломи та сертифікати</h2>
+        <div class="diploma-row">
+          <div class="diploma-column">
+        <img id="certif1" src="images/logotherapy-certificate.jpg" alt="диплом за спеціальністю логотерапія">
+      </div>
+      <div class="diploma-column">
+        <img id="certif3" src="images/psychology-certificate.jpg" alt="диплом за спеціальністю психологія">
+      </div>
+      <div class="diploma-column">
+        <img id="certif2" src="images/onco-psychology-certificate.jpg" alt="сертифікат з онкопсихології">
+      </div>
+      </div>
+        <div id="myModal" class="modal">
+          <span class="close">&times;</span>
+          <img class="modal-content" id="img01">
+          <div id="caption"></div>
+        </div>
+      </div>
+  </section>
+
+            <script>
+            var modal = document.getElementById("myModal");
+            var img = document.getElementById("certif1");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+            img.onclick = function(){
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = this.alt;
+            }
+
+            var img = document.getElementById("certif2");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+
+            img.onclick = function(){
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = this.alt;
+            }
+
+            var img = document.getElementById("certif3");
+            var modalImg = document.getElementById("img01");
+            var captionText = document.getElementById("caption");
+
+            img.onclick = function(){
+              modal.style.display = "block";
+              modalImg.src = this.src;
+              captionText.innerHTML = this.alt;
+            }
+
+            var span = document.getElementsByClassName("close")[0];
+
+            span.onclick = function() {
+              modal.style.display = "none";
+            }
+            </script>
+
+<!-- Webinars -->
+      <section class="webinars">
+        <div class="content-wrap">
+        <h2>Мої вебінари</h2>
+        <section class="item">
+          <div class="details">
+        <h3>"В пошуках призначення: психософія"</h3>
+      </div>
+        <div class="summary">
+        <p>Ким ти хочеш стати, коли виростеш?
+Часто це питання не втрачає своєї актуальності і в дорослому віці. Справа за вибором. І зробити його тим легше, чим краще ми розуміємо себе.</p>
+<section>
+</div>
+        <div class="details">
+      <h3>"Теорія ліній Девіда Кіббі"</h3>
+    </div>
+    <div class="summary">
+    <p>У внутрішньому світі жінок пострадянського простору доводиться зустрічати багато зламаних речей. Одна з них - взаємодія з власним тілом. Це роз'єднання здається чимось неважливим, але з нього виростає наша нездатність приймати себе і насолоджуватись життям.</p>
+    <p>Слідкуйте за розкладом вебінарів на моїй сторінці в <a href="https://www.facebook.com/lumnite">фейсбук</a>.</p>
+  </div>
+</div>
+</section>
+</section>
+</section>
+
+<!-- Feedback Slideshow -->
+<div class="slider-middle">
+  <h2>Відгуки клієнтів </h2>
+<div class="slides">
+  <input type="radio" name="r" id="feedback1" checked>
+  <input type="radio" name="r" id="feedback2">
+  <input type="radio" name="r" id="feedback3">
+  <input type="radio" name="r" id="feedback4">
+  <div class="slide s1"><img src="images/vidguk-klienta1.jpg" alt="позитивний відгук"></div>
+  <div class="slide"><img src="images/vidguk-klienta2.jpg" alt="позитивний відгук"></div>
+  <div class="slide"><img src="images/vidguk-klienta3.jpg" alt="позитивний відгук"></div>
+  <div class="slide"><img src="images/vidguk-klienta1.jpg" alt="позитивний відгук"></div>
+</div>
+<div class="navigation">
+<label for="feedback1" class="bar"></label>
+<label for="feedback2" class="bar"></label>
+<label for="feedback3" class="bar"></label>
+<label for="feedback4" class="bar"></label>
+</div>
+</div>
+
+<!-- Contact Form -->
+<footer>
+<section class ="form">
+  <div id="form"></div>
+
+<form action="/form.php" method="post">
+    <h2>Зв'яжіться зі мною</h2>
+    <p>Ваші контакти для зворотнього зв'язку</p>
+    <br>
+ <ul>
+  <li>
+    <label for="name">Ім'я:</label>
+    <input type="text" name="name">
+  </li
+  <li>
+    <label for="email">E-mail:</label>
+    <input type="email" name="email">
+  </li>
+  <li>
+    <label for="phone">Телефон:</label>
+      <input type="phone" name="phone">
+  <li>
+    <label for="message">Повідомлення:</label>
+    <textarea name="message"></textarea>
+  </li>
+  <li>
+    <label for="submit"></label>
+  <input type="submit" name='submit' value="Готово">
+</li>
+<br>
+ </ul>
+ <!-- Social Media-->
+<p>Мої контакти в соц. мережах</p>
+<br>
+ <div class="socialMedia">
+ <a href="https://api.whatsapp.com/send?phone=+380662229196" class="fab fa-whatsapp" ></a>
+ <a href="https://www.facebook.com/lumnite" class="fab fa-facebook" target="_blank"></a>
+ <a href="skype:Kieftelegraff?chat" class="fab fa-skype" target="_blank"></a>
+ <a href="mailto:dovhaliubov@ukr.net" class="fas fa-envelope-open" target="_blank"></a>
+ <p>dovhaliubov@ukr.net</p>
+ <br>
+ <br>
+ </div>
+</form>
+</section>
+  </footer>
+    </main>
+<!-- credits section
+Website created by Olena Kutinova https://www.linkedin.com/in/olena-kutinova/
+Icons made by Freepik www.flaticon.com/authors/freepik from www.flaticon.com
+-->
+    </body>
+    </html>
