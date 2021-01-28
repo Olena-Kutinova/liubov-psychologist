@@ -12,32 +12,33 @@
   <body>
 
 <!-- Navig-->
-    <div class="topnav" id="myTopnav">
-      <a href="#intro" class="active">Про мене</a>
-      <a href="#">Про логотерапію</a>
-      <a href="#form">Контакти</a>
-      <div class="dropdown">
-        <button class="dropbtn">Блог
-          <i class="fa fa-caret-down"></i>
-        </button>
-        <div class="dropdown-content">
-          <a href="#">Блог 1</a>
-          <a href="#">Блог 2</a>
-          <a href="#">Блог 3</a>
-        </div>
-      </div>
-      <a href="javascript:void(0);" class="icon-nav" onclick="myFunction()">&#9776;</a>
+<div class="topnav" id="myTopnav">
+  <a href="#intro" class="active">Про мене</a>
+  <a href="#">Про логотерапію</a>
+  <a href="#form">Контакти</a>
+  <div class="dropdown">
+    <button class="dropbtn">Блог
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="#">Блог 1</a>
+      <a href="#">Блог 2</a>
+      <a href="#">Блог 3</a>
     </div>
-    <script>
-    function myFunction() {
-      var x = document.getElementById("myTopnav");
-      if (x.className === "topnav") {
-        x.className += " responsive";
-      } else {
-        x.className = "topnav";
-      }
-    }
-    </script>
+  </div>
+  <a href="javascript:void(0);" class="icon-nav" onclick="topnavFunction()">&#9776; </a>
+</div>
+
+<script>
+function topnavFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
 
     <main>
 <!-- Header-->

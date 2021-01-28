@@ -10,7 +10,7 @@
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
-  font-size: 17px;
+  font-size: 20px;
 }
 
 .active {
@@ -27,13 +27,14 @@
 }
 
 .dropdown .dropbtn {
-  font-size: 17px;
+  font-size: 20px;
   color: #312921;
-  padding: 16px 16px;
+  padding: 17px 16px;
   align-content: center;
   background-color: inherit;
   font-family: inherit;
   margin: 0;
+  border: none;
 }
 
 .dropdown-content {
