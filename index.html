@@ -224,22 +224,22 @@ if (window.screen.width <= 960 ) {
 <section class ="form">
   <div id="form"></div>
 
-<form action="/form.php" method="post">
+<form action="form.php" method="post">
     <h2>Зв'яжіться зі мною</h2>
     <p>Ваші контакти для зворотнього зв'язку</p>
     <br>
  <ul>
   <li>
     <label for="name">Ім'я:</label>
-    <input type="text" name="name" placeholder="Ваше ім'я">
+    <input type="text" name="name" required>
   </li
   <li>
     <label for="email">E-mail:</label>
-    <input type="email" name="email" placeholder="flower1234@gmail.com">
+    <input type="email" name="email">
   </li>
   <li>
     <label for="phone">Телефон:</label>
-      <input type="phone" name="phone" placeholder="0661234567" pattern=(\d{3})-?\s?(\d{3})-?\s?(\d{4}) required>
+      <input type="phone" name="phone" required>
   <li>
     <label for="message">Повідомлення:</label>
     <textarea name="message"></textarea>
