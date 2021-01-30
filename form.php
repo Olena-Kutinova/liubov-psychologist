@@ -1,62 +1,53 @@
 <?php
-if(!isset($_POST['submit']))
-{
-	//This page should not be accessed directly. Need to submit the form.
-	echo "Будь ласка, заповніть форму";
-}
-$name = $_POST['name'];
-$visitor_email = $_POST['email'];
-$visitor_phone = $_POST['phone'];
-$message = $_POST['message'];
 
-//Validate first
-if(empty($name)||empty($visitor_email)||empty($phone))
-{
-    echo "Будь ласка, заповніть всі поля";
-    exit;
-}
+if($_POST) {
+    $name = "";
+    $email = "";
+    $phone = "";
+    $message = "";
 
-if(IsInjected($visitor_email))
-{
-    echo "Перевірте корректність ел.пошти";
-    exit;
-}
+		if(isset($_POST['name'])) {
+        $name = filter_var($_POST['name'], FILTER_SANITIZE_STRING);
+    }
 
-$email_from = 'kutinova16@gmail.com';//<== update the email address
-$email_subject = "Нова заявка з вебсайту";
-$email_body = "Ви отримали нову заявку від $name.\n".
-    "Повідомлення:\n $message \n телефон: $phone"
+    if(isset($_POST['email'])) {
+        $email = str_replace(array("\r", "\n", "%0a", "%0d"), '', $_POST['email']);
+        $email = filter_var($email, FILTER_VALIDATE_EMAIL);
 
-$to = 'kutinova16@gmail.com';//<== update the email address
-$headers = 'From: $email_from \r\n';
-$headers .= "Reply-To: $visitor_email \r\n";
-//Send the email!
-mail($to,$email_subject,$email_body,$headers);
-//done. redirect to thank-you page.
-header('Location: thank-you.html');
+    }
 
+    if(isset($_POST['phone'])) {
+        $phone = filter_var($_POST['phone'], FILTER_SANITIZE_NUMBER_INT);
+    }
 
-// Function to validate against any email injection attempts
-function IsInjected($str)
-{
-  $injections = array('(\n+)',
-              '(\r+)',
-              '(\t+)',
-              '(%0A+)',
-              '(%0D+)',
-              '(%08+)',
-              '(%09+)'
-              );
-  $inject = join('|', $injections);
-  $inject = "/$inject/i";
-  if(preg_match($inject,$str))
-    {
-    return true;
-  }
-  else
-    {
-    return false;
-  }
-}
+		if(isset($_POST['message'])) {
+			$message = htmlspecialchars($_POST['message']);
+	}
 
-?>
+	$recipient = "kutinova16@gmail.com";
+
+	    $headers  = 'test Нова заявка' . "\r\n"
+	    .'Content-type: text/html; charset=utf-8' . "\r\n"
+	    .'From: ' . $email . "\r\n";
+
+	    $email_content = "<html><body>";
+	    $email_content .= "<table style='font-family: Arial;'><tbody><tr><td style='background: #eee; padding: 10px;'>Visitor Name</td><td style='background: #fda; padding: 10px;'>$name</td></tr>";
+	    $email_content .= "<tr><td style='background: #eee; padding: 10px;'>Visitor Email</td><td style='background: #fda; padding: 10px;'>$email</td></tr>";
+	    $email_content .= "<tr><td style='background: #eee; padding: 10px;'>Visitor Phone</td><td style='background: #fda; padding: 10px;'>$phone</td></tr>";
+
+	    $email_content .= "<p style='font-family: Arial; font-size: 1.25rem;'><strong>Special Request from $name &mdash;</strong><i> $message</i>.</p>";
+	    $email_content .= '</body></html>';
+
+	    echo $email_content;
+
+	    if(mail($recipient, "Contact Form", $email_content, $headers)) {
+	        echo '<p>Thank you for contacting me.</p>';
+	    } else {
+	        echo '<p>We are sorry but the contact form did not go through.</p>';
+	    }
+
+	} else {
+	    echo '<p>Something went wrong</p>';
+	}
+
+	?>
