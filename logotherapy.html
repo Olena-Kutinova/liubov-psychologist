@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="uk">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Про логотерапію</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="css/fontawesome.css" rel="stylesheet">
+    <link href="css/brands.css" rel="stylesheet">
+    <link href="css/solid.css" rel="stylesheet">
+  </head>
+  <body>
+
+<!-- Navig-->
+<div class="topnav" id="myTopnav">
+  <a href="index.html" class="active">Про мене</a>
+  <a href="logotherapy.html">Про логотерапію</a>
+  <a href="#form">Контакти</a>
+  <div class="dropdown">
+    <button class="dropbtn">Блог
+      <i class="fa fa-caret-down"></i>
+    </button>
+    <div class="dropdown-content" id="myDropdown">
+      <a href="#">Блог 1</a>
+      <a href="#">Блог 2</a>
+      <a href="#">Блог 3</a>
+    </div>
+  </div>
+  <a href="javascript:void(0);" class="icon-nav" onclick="topnavFunction()">&#9776; </a>
+</div>
+
+<script>
+function topnavFunction() {
+  var x = document.getElementById("myTopnav");
+  if (x.className === "topnav") {
+    x.className += " responsive";
+  } else {
+    x.className = "topnav";
+  }
+}
+</script>
+
+    <main>
+<!-- Header-->
+  <header>
+    <section class="billboard">
+  <img src="images/logotherapy.jpg" class="billboard" alt="про логотерапію">
+  </section>
+</header>
+
+<!-- Intro -->
+<section class="logoteraphy">
+      <div class="content-wrap">
+      <h1>Що таке логотерапія?</h1>
+      <p> Логотерапія (лого- від грецького «logos» як «сенс») була розроблена Віктором Франклєм як один з напрямів екзистенційної психотерапії. Її базова концепція стверджує, що основним для людини є прагнення до пошуку і реалізації сенсу життя.</p>
+      <p>Екзистенційна психологія  бачить стихією існування людини не надто позитивні на перший погляд речі: наші внутрішні самотність, свободу і відповідальність. Сенс для існування в цій стихії потрібен людині, як киту потрібен ковток повітря перед тим, як зануритись в океан. Пошуком цієї невловимої павутинки і непорушної скелі людського «для чого» і займається логотерапія. Сенс є унікальним і неповторним для кожного, так само, як унікальною і неповторною є кожна особистість і обставини її життя.</p>
+      <p>Про логотерапію неможливо розповідати без неймовірної історії її засновника. Віктор Франкль, австрійський невролог і психіатр єврейського походження, у роки Другої світової пройшов через найстрашніші концтабори, втративши там всю свою родину. Тож можна сміливо казати, що своїм життям він заслужив право розповідати іншим про можливість знайти сенс в найбезнадійнішій ситуації. Приклад Франкля, його книги, сповнені спокійної впевненості в тому, що світло сенсу можливе і в найстрашнішому горі, – це перша допомога, яку я раджу у складних життєвих обставинах.</p>
+      <p>Логотерапія наголошує: сенс не видумується, не вибудовується, а знаходиться (і втрачається). Чому? Тому що для сенсу недостатньо самої лише людини. Як на мене, це відкриття Франкля геніальне і неймовірно терапевтичне в своїй суті: відкриття другої, не менш важливої складової процесу відчуття сенсу. Потрібні двоє: я і світ, я і життя. В концтаборі Франкль організував власну агентурну мережу. «Агенти» доповідали йому, якщо хтось із ув’язнених виказував суїцидальні думки. Він заводив бесіду з цими людьми, і зазвичай отримував таку відповідь про причину для суїциду: «Що мені вже очікувати від життя?». Насправді, нормальна відповідь виснаженої, зневіреної людини, яка впевнена, що більше нічого хорошого ніколи не буде. Але засновник логотерапії зрозумів, що питання треба ставити інакше: «Що життя очікує від мене?». Життя, його вихідні данні, від кольору очей до моїх талантів, його умови і події, що відбуваються довкола мене, і є питанням. Моя справа – давати відповідь на нього. Життя запитує, я відповідаю.</p>
+        <p>Отже, логотерапія була створена в концтаборі, щоб бути провідником через ніч людського існування. Та її суть аж ніяк не зводиться до виживання в екстремальних умовах. Прожити, а не перетерпіти, своє унікальне життя, сповнене відчуттям справжнього сенсу, дати достойну людини відповідь на його виклики, мати «для чого», щоб подолати будь-які «як» – ось де б’ється серце логотерапії.</p>
+        <br>
+</div>
+</section>
+
+<!-- Contact Form -->
+<footer>
+<section class ="form">
+  <div id="form"></div>
+
+<form action="https://formspree.io/f/myybvgle" method="post">
+    <h2>Зв'яжіться зі мною</h2>
+    <p>Ваші контакти для зворотнього зв'язку</p>
+    <br>
+ <ul>
+  <li>
+    <label for="name">Ім'я:</label>
+    <input type="text" name="name" required>
+  </li
+  <li>
+    <label for="email">E-mail:</label>
+    <input type="email" name="email">
+  </li>
+  <li>
+    <label for="phone">Телефон:</label>
+      <input type="phone" name="phone" required>
+  <li>
+    <label for="message">Повідомлення:</label>
+    <textarea name="message" required></textarea>
+  </li>
+  <li>
+  <input type="submit" name='submit' value="Готово">
+</li>
+<input type="hidden" name="_subject" value="сповіщення з formspree (нова заявка)" />
+<input type="text" name="_gotcha" style="display:none" />
+<script>
+function submit() {
+ document.getElementById("form").reset();
+}
+</script>
+<br>
+ </ul>
+ <!-- Social Media-->
+<p>Мої контакти в соцмережах</p>
+<br>
+ <div class="socialMedia">
+ <a href="https://api.whatsapp.com/send?phone=+380662229196" class="fab fa-whatsapp" ></a>
+ <a href="https://www.facebook.com/lumnite" class="fab fa-facebook" target="_blank"></a>
+ <a href="skype:Kieftelegraff?chat" class="fab fa-skype" target="_blank"></a>
+ <a href="mailto:dovhaliubov@ukr.net" class="fas fa-envelope" target="_blank"></a>
+ <p>dovhaliubov@ukr.net</p>
+ <br>
+ <br>
+ </div>
+</form>
+</section>
+  </footer>
+    </main>
+<!-- credits section
+Website created by Olena Kutinova https://www.linkedin.com/in/olena-kutinova/
+Icons made by Freepik www.flaticon.com/authors/freepik from www.flaticon.com
+-->
+    </body>
+    </html>
