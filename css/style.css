@@ -9,13 +9,15 @@
   color: #312921;
   text-align: center;
   padding: 14px 16px;
+  font-family: 'Lobster', cursive;
   text-decoration: none;
   font-size: 20px;
 }
 
+/*
 .active {
   background-color: #7cb43b;
-}
+} */
 
 .topnav .icon-nav {
   display: none;
@@ -29,10 +31,11 @@
 .dropdown .dropbtn {
   font-size: 20px;
   color: #312921;
-  padding: 17px 16px;
+  padding: 14px 16px;
+  height: 30px;
   align-content: center;
   background-color: inherit;
-  font-family: inherit;
+  font-family: 'Lobster', cursive;
   margin: 0;
   border: none;
 }
@@ -248,7 +251,7 @@ body {
   color: #312921;
   margin: 0;
   padding: 0;
-  font-family: Montserrat,sans-serif;
+  font-family: 'Montserrat', sans-serif;
   font-size: 18px;
   line-height: 1.5;
 }
@@ -282,8 +285,12 @@ h3 {
   margin-right: 20px;
 }
 
-h1,h2 {
-  font-family: Nunito, bold;
+h1 {
+  font-family: 'Lobster', cursive;
+}
+
+h2 {
+  font-family: 'Roboto', sans-serif;
 }
 
 p {
@@ -346,6 +353,12 @@ p {
     right: 0;
     padding: 0;
   }
+}
+.bottom-right {
+  position: absolute;
+  font-size: 11px;
+  font-style: italic;
+  right: 10px;
 }
 
 .video {
@@ -429,7 +442,7 @@ p {
 
 .navigation {
   position: absolute;
-  bottom: 16px;
+  bottom: 5px;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
