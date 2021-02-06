@@ -1,12 +1,12 @@
 .topnav {
-  background-color: #f7f4f3;
+  background-color: #312920;
   overflow: hidden;
 }
 
 .topnav a {
   float: left;
   display: block;
-  color: #312921;
+  color: white;
   text-align: center;
   padding: 14px 16px;
   font-family: 'Cormorant', serif;
@@ -31,7 +31,7 @@
 
 .dropdown .dropbtn {
   font-size: 20px;
-  color: #312921;
+  color: white;
   padding: 14px 16px;
   height: 30px;
   align-content: center;
@@ -45,7 +45,7 @@
 .dropdown-content {
   display: none;
   position: absolute;
-  background-color: #f7f4f3;
+  background-color: #312920;
   min-width: 160px;
   box-shadow: 0 8px 16px 0 rgba(0,0,0,.2);
   z-index: 1;
@@ -53,7 +53,7 @@
 
 .dropdown-content a {
   float: none;
-  color: #312921;
+  color: white;
   padding: 12px 16px;
   text-decoration: none;
   display: block;
@@ -61,12 +61,12 @@
 }
 
 .dropdown:hover .dropbtn,.topnav a:hover {
-  background-color: #c6e3a6;
+  background-color: #b6a590;
   color: #312921;
 }
 
 .dropdown-content a:hover {
-  background-color: #c6e3a6;
+  background-color: #b6a590;
   color: #312921;
 }
 
@@ -250,12 +250,12 @@
 }
 
 body {
-  color: #312921;
+  color: black;
   margin: 0;
   padding: 0;
   font-family: 'Cormorant', serif;
-  font-weight: 500;
-  font-size: 18px;
+  font-weight: 600;
+  font-size: 20px;
   line-height: 1.5;
 }
 
@@ -282,12 +282,12 @@ h2 {
   font-weight:700;
   margin: auto;
   padding-top: 15px;
-  font-size: 20px;
+  font-size: 22px;
 }
 
 h3 {
-  font-size: 18px;
-  font-weight: 500;
+  font-size: 20px;
+  font-weight: 700;
   margin-right: 20px;
 }
 
@@ -306,11 +306,11 @@ p {
 }
 
 .sub-page {
-  background:#ECEFE6;
+  background:#F7F3F4;
 }
 
 .intro {
-  background: #ebf5e0;
+  background: #F7F3F4;
 }
 
 .billboard {
@@ -345,7 +345,7 @@ p {
     display: inline-block;
     width: 100%;
     text-align: left;
-    background-color: #ebf5e0;
+    background-color: #F7F3F4;
     color: #312920;
     bottom: 0;
     right: 0;
@@ -366,7 +366,7 @@ p {
 }
 
 .logoteraphy {
-  background: #ebf5e0;
+  background: #fffaf0;
   padding-bottom: 30px;
 }
 
@@ -404,7 +404,7 @@ p {
 }
 
 .education {
-  background: #ebf5e0;
+  background: #fffaf0;
   box-sizing: border-box;
   padding-bottom: 30px;
 }
@@ -440,7 +440,7 @@ p {
 
 .navigation {
   position: absolute;
-  bottom: 5px;
+  bottom: 0;
   left: 50%;
   transform: translateX(-50%);
   display: flex;
@@ -557,7 +557,7 @@ label {
 input,textarea {
   font: 1em sans-serif;
   color: #312920;
-  font-weight: bolder;
+  font-weight: 600;
   width: 100%;
   box-sizing: border-box;
   border: 1px solid #999;
