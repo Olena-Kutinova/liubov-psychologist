@@ -306,11 +306,11 @@ p {
 }
 
 .sub-page {
-  background:#F7F3F4;
+  background:white;
 }
 
 .intro {
-  background: #F7F3F4;
+  background:white;
 }
 
 .billboard {
@@ -331,10 +331,10 @@ p {
 
 .billboard-text {
   position: absolute;
-  bottom: 20px;
-  right: 100px;
-  background-color: #f7f4f3;
-  color: #312921;
+  bottom: 120px;
+  right: 20px;
+  background-color: #312921;
+  color: white;
   text-align: left;
   padding: 0 20px 20px 20px;
 }
@@ -345,8 +345,8 @@ p {
     display: inline-block;
     width: 100%;
     text-align: left;
-    background-color: #F7F3F4;
-    color: #312920;
+    background-color: white;
+    color: black;
     bottom: 0;
     right: 0;
     padding: 0;
@@ -360,18 +360,18 @@ p {
 }
 
 .video {
-  background: #f7f4f3;
+  background: white;
   display: flex;
   justify-content: center;
 }
 
 .logoteraphy {
-  background: #fffaf0;
+  background: white;
   padding-bottom: 30px;
 }
 
 .services {
-  background: #f7f4f3;
+  background: white;
   box-sizing: border-box;
 }
 
@@ -404,7 +404,7 @@ p {
 }
 
 .education {
-  background: #fffaf0;
+  background: white;
   box-sizing: border-box;
   padding-bottom: 30px;
 }
@@ -414,7 +414,7 @@ p {
 }
 
 .webinars {
-  background: #f7f4f3;
+  background: white;
   padding-bottom: 30px;
 }
 
