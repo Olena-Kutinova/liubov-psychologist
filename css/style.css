@@ -61,12 +61,12 @@
 }
 
 .dropdown:hover .dropbtn,.topnav a:hover {
-  background-color: #b6a590;
+  background-color: #acc864;
   color: #312921;
 }
 
 .dropdown-content a:hover {
-  background-color: #b6a590;
+  background-color: #acc864;
   color: #312921;
 }
 
