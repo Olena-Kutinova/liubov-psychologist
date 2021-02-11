@@ -38,8 +38,7 @@ h3 {
   font-weight: 700;
   margin-right: 30px;
   line-height: 1.5;
-  margin-top: 0;
-  /* margin-top: 1rem; */
+  margin: 0;
 }
 
 h4, h5, p {
@@ -411,10 +410,6 @@ h6 {
 @media screen and (max-width:960px) {
   .service-column {
     width: 100%;
-  }
-
-  .service-icon {
-    width: 8%;
   }
 }
 
