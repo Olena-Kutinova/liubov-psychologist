@@ -67,56 +67,52 @@ function topnavFunction() {
 
 <!-- Contact Form -->
 <footer>
-<section class ="form">
-  <div id="form"></div>
-
-<form action="https://formspree.io/f/myybvgle" method="post">
-    <h2>Зв'яжіться зі мною</h2>
-    <p>Ваші контакти для зворотнього зв'язку</p>
-    <br>
- <ul>
-  <li>
-    <label for="name">Ім'я:</label>
-    <input type="text" name="name" required>
-  </li
-  <li>
-    <label for="email">E-mail:</label>
-    <input type="email" name="email">
-  </li>
-  <li>
-    <label for="phone">Телефон:</label>
-      <input type="phone" name="phone" required>
-  <li>
-    <label for="message">Повідомлення:</label>
-    <textarea name="message" required></textarea>
-  </li>
-  <li>
-  <input type="submit" name='submit' value="Готово">
-</li>
-<input type="hidden" name="_subject" value="сповіщення з formspree (нова заявка)" />
-<input type="text" name="_gotcha" style="display:none" />
-<script>
-function submit() {
- document.getElementById("form").reset();
-}
-</script>
-<br>
- </ul>
- <!-- Social Media-->
-<p>Мої контакти в соцмережах</p>
-<br>
- <div class="socialMedia">
- <a href="https://api.whatsapp.com/send?phone=+380662229196" class="fab fa-whatsapp" ></a>
- <a href="https://www.facebook.com/lumnite" class="fab fa-facebook" target="_blank"></a>
- <a href="skype:Kieftelegraff?chat" class="fab fa-skype" target="_blank"></a>
- <a href="mailto:dovhaliubov@ukr.net" class="fas fa-envelope" target="_blank"></a>
- <p>dovhaliubov@ukr.net</p>
- <br>
- <br>
- </div>
-</form>
-</section>
-  </footer>
+  <div class="content-wrap">
+    <section class="form">
+      <div id="form"></div>
+      <form action="https://formspree.io/f/myybvgle" method="post">
+        <h2>Зв'яжіться зі мною</h2>
+        <p>Ваші контакти для зворотнього зв'язку</p>
+        <ul>
+          <li>
+            <label for="name">Ім'я:</label>
+            <input type="text" name="name" required>
+          </li <li>
+          <label for="email">E-mail:</label>
+          <input type="email" name="email">
+          </li>
+          <li>
+            <label for="phone">Телефон:</label>
+            <input type="phone" name="phone" required>
+          <li>
+            <label for="message">Повідомлення:</label>
+            <textarea name="message" required></textarea>
+          </li>
+          <li>
+            <input type="submit" name='submit' value="Готово">
+          </li>
+          <input type="hidden" name="_subject" value="сповіщення з formspree (нова заявка)" />
+          <input type="text" name="_gotcha" style="display:none" />
+          <script>
+            function submit() {
+              document.getElementById("form").reset();
+            }
+          </script>
+        </ul>
+        <!-- Social Media-->
+        <h5>Мої контакти в соцмережах</h5>
+        <div class="socialMedia">
+          <a href="https://api.whatsapp.com/send?phone=+380662229196" class="fab fa-whatsapp"></a>
+          <a href="https://www.facebook.com/lumnite" class="fab fa-facebook" target="_blank"></a>
+          <a href="skype:Kieftelegraff?chat" class="fab fa-skype" target="_blank"></a>
+          <a href="mailto:dovhaliubov@ukr.net" class="fas fa-envelope" target="_blank"></a>
+          <p>dovhaliubov@ukr.net</p>
+          <p>&copy; Любов Долгова</p>
+      </form>
+    </section>
+  </div>
+  </div>
+</footer>
     </main>
 <!-- credits section
 Website created by Olena Kutinova https://www.linkedin.com/in/olena-kutinova/

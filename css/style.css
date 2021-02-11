@@ -18,7 +18,7 @@ a:hover {
 }
 
 h1 {
-  font-weight:700;
+  font-weight: 700;
   font-size: 35px;
   line-height: 1;
   margin-bottom: 20px;
@@ -27,7 +27,7 @@ h1 {
 }
 
 h2 {
-  font-weight:700;
+  font-weight: 700;
   margin: auto;
   padding-top: 1rem;
   font-size: 28px;
@@ -60,7 +60,6 @@ h6 {
   font-size: 18px;
   margin-bottom: 1rem;
   margin-top: 0;
-
 }
 
 .topnav {
@@ -84,7 +83,6 @@ h6 {
 .active {
   background-color: #7cb43b;
 } */
-
 .topnav .icon-nav {
   display: none;
 }
@@ -112,7 +110,7 @@ h6 {
   position: absolute;
   background-color: #312920;
   min-width: 160px;
-  box-shadow: 0 8px 16px 0 rgba(0,0,0,.2);
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, .2);
   z-index: 1;
 }
 
@@ -125,7 +123,7 @@ h6 {
   text-align: left;
 }
 
-.dropdown:hover .dropbtn,.topnav a:hover {
+.dropdown:hover .dropbtn, .topnav a:hover {
   background-color: #acc864;
   color: #312921;
 }
@@ -140,7 +138,7 @@ h6 {
 }
 
 @media screen and (max-width:600px) {
-  .dropdown .dropbtn,.topnav a:not(:first-child) {
+  .dropdown .dropbtn, .topnav a:not(:first-child) {
     display: none;
   }
 
@@ -226,7 +224,7 @@ h6 {
   height: 100%;
   overflow: auto;
   background-color: #000;
-  background-color: rgba(0,0,0,.9);
+  background-color: rgba(0, 0, 0, .9);
 }
 
 .modal-content {
@@ -273,7 +271,7 @@ h6 {
   transition: .3s;
 }
 
-.close:focus,.close:hover {
+.close:focus, .close:hover {
   color: #bbb;
   text-decoration: none;
   cursor: pointer;
@@ -292,11 +290,11 @@ h6 {
 }
 
 @media only screen and (max-width:960px) {
-  #certif1,#certif2,#certif3 {
+  #certif1, #certif2, #certif3 {
     width: 100%;
   }
 
-  #certif1:hover,#certif2:hover,#certif3:hover {
+  #certif1:hover, #certif2:hover, #certif3:hover {
     opacity: 1;
     cursor: auto;
   }
@@ -310,7 +308,7 @@ h6 {
   }
 }
 
-*,:after,:before {
+*, :after, :before {
   box-sizing: inherit;
 }
 
@@ -321,11 +319,11 @@ h6 {
 }
 
 .sub-page {
-  background:white;
+  background: white;
 }
 
 .intro {
-  background:white;
+  background: white;
 }
 
 .billboard {
@@ -367,6 +365,7 @@ h6 {
     padding: 0;
   }
 }
+
 .bottom-right {
   position: absolute;
   font-size: 11px;
@@ -404,7 +403,7 @@ h6 {
 .service-icon {
   width: auto;
   max-width: 20%;
-  float:left;
+  float: left;
   margin: 0 5% 0 0;
   color: #acc864;
 }
@@ -413,9 +412,10 @@ h6 {
   .service-column {
     width: 100%;
   }
+
   .service-icon {
     width: 8%;
-}
+  }
 }
 
 .education {
@@ -430,7 +430,6 @@ h6 {
 .webinars {
   background: white;
 }
-
 
 .slider-middle {
   margin-bottom: 15px;
@@ -536,24 +535,19 @@ footer {
 #form {
   background: #312920;
   color: #f7f4f3;
-
 }
 
 .form {
   max-width: 450px;
   margin: 0 auto 0 33%;
   width: auto;
-
 }
 
 @media screen and (max-width:960px) {
   .form {
-
     max-width: auto;
     width: 85%;
     margin-left: 0px;
-
-
   }
 }
 
@@ -570,7 +564,7 @@ label {
   padding-right: 10px;
 }
 
-input,textarea {
+input, textarea {
   font: 1rem sans-serif;
   color: #312920;
   font-weight: 600;
@@ -583,10 +577,10 @@ input,textarea {
 }
 
 input:hover {
-  text-shadow: -.25px -.5px 0 #9e866b,.25px .25px #9e866b;
+  text-shadow: -.25px -.5px 0 #9e866b, .25px .25px #9e866b;
 }
 
-input:focus,textarea:focus {
+input:focus, textarea:focus {
   border-color: #000;
 }
 
