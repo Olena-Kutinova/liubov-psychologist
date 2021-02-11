@@ -3,10 +3,10 @@ body {
   margin: 0;
   padding: 0;
   font-family: 'Cormorant', serif;
-  font-weight: 600;
+  font-weight: 400;
   font-size: 20px;
   line-height: 1.5;
-  text-align: justify;
+  /* text-align: justify; */
 }
 
 a {
@@ -29,7 +29,7 @@ h1 {
 h2 {
   font-weight:700;
   margin: auto;
-  margin-top: 1rem;
+  padding-top: 1rem;
   font-size: 28px;
 }
 
@@ -38,20 +38,25 @@ h3 {
   font-weight: 700;
   margin-right: 30px;
   line-height: 1.5;
-  margin-top: 1rem;
+  margin-top: 0;
+  /* margin-top: 1rem; */
 }
 
 h4, h5, p {
+  font-weight: 500;
   display: block;
   font-size: 20px;
   line-height: 1.5;
   margin-top: 1rem;
   margin-bottom: 1rem;
-  margin-inline-start: 0;
-  margin-inline-end: 0;
+}
+
+h4 {
+  margin-right: 30px;
 }
 
 h6 {
+  font-weight: 500;
   font-size: 18px;
   margin-bottom: 1rem;
   margin-top: 0;
@@ -397,23 +402,20 @@ h6 {
 }
 
 .service-icon {
-  width: 20%;
-  margin-left: 40%;
-  margin-right: 40%;
+  width: auto;
+  max-width: 20%;
+  float:left;
+  margin: 0 5% 0 0;
+  color: #acc864;
 }
 
 @media screen and (max-width:960px) {
   .service-column {
     width: 100%;
   }
-  .service-column h3, h6 {
-    text-align: center;
-  }
   .service-icon {
-    width: 16%;
-    margin-left: 42%;
-    margin-right: 42%;
-  }
+    width: 8%;
+}
 }
 
 .education {
@@ -429,6 +431,7 @@ h6 {
   background: white;
 }
 
+
 .slider-middle {
   margin-bottom: 15px;
   padding: 0;
@@ -437,15 +440,16 @@ h6 {
   height: auto;
   overflow: hidden;
   position: relative;
-  left: 50%;
-  transform: translateX(-50%);
+  left: 33%;
+  /* transform: translateX(-50%); */
 }
 
-@media screen and (max-width:665px) {
+@media screen and (max-width:960px) {
   .slider-middle {
     width: auto;
     height: auto;
-    border: 20px solid #fff;
+    border: solid #fff;
+    left: 0;
   }
 }
 
@@ -523,32 +527,33 @@ footer {
 }
 
 @media screen and (min-width:960px) {
-  .item {
+  .grid-item {
     display: grid;
     grid-template-columns: 1fr 2fr;
   }
 }
 
-.form {
+#form {
   background: #312920;
   color: #f7f4f3;
+
 }
 
-.form h2 {
-  text-align: left;
-}
-
-form {
-  max-width: 500px;
-  margin: auto;
+.form {
+  max-width: 450px;
+  margin: 0 auto 0 33%;
   width: auto;
-  padding-left: 20px;
-  padding-right: 25px;
+
 }
 
-@media screen and (max-width:600px) {
+@media screen and (max-width:960px) {
   .form {
-    width: auto;
+
+    max-width: auto;
+    width: 85%;
+    margin-left: 0px;
+
+
   }
 }
 
