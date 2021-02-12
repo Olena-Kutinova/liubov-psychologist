@@ -426,7 +426,7 @@ hr {
   }
 }
 
-@media screen and (max-width:1057px) and (min-width:960px) {
+@media screen and (max-width:1057px) {
   h3 {
     font-size: 20px;
   }
