@@ -242,7 +242,7 @@
             <ul>
               <li>
                 <label for="name">Ім'я:</label>
-                <input type="text" name="name" required>
+                <input type="text" name="name" required >
               </li <li>
               <label for="email">E-mail:</label>
               <input type="email" name="email">
@@ -259,6 +259,9 @@
               </li>
               <input type="hidden" name="_subject" value="сповіщення з formspree (нова заявка)" />
               <input type="text" name="_gotcha" style="display:none" />
+
+              <input type="hidden" name="_language" value="uk" />
+
               <script>
                 function submit() {
                   document.getElementById("form").reset();
