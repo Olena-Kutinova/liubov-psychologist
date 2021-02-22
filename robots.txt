@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://liubovdolhova.com/sitemap.xml
