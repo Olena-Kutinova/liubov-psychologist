@@ -372,9 +372,10 @@ hr {
 
 .bottom-right {
   position: absolute;
-  font-size: 11px;
+  font-size: 16px;
   font-style: italic;
   right: 10px;
+  color:black;
 }
 
 .video {
