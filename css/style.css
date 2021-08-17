@@ -1,5 +1,3 @@
-
-
 body {
   color: black;
   margin: 0;
@@ -186,39 +184,6 @@ hr {
   }
 }
 
-/* Slideshow container */
-.slideshow-container {
-  position: relative;
-  margin: auto;
-}
-
-/* Slideshow container - Next & previous buttons */
-.prev, .next {
-  cursor: pointer;
-  position: absolute;
-  top: 50%;
-  width: auto;
-  padding: 16px;
-  margin-top: -22px;
-  color: white;
-  font-weight: bold;
-  font-size: 18px;
-  transition: 0.6s ease;
-  border-radius: 0 3px 3px 0;
-  user-select: none;
-}
-
-/* Slideshow container - Position the "next button" to the right */
-.next {
-  right: 0;
-  border-radius: 3px 0 0 3px;
-}
-
-/* Slideshow container - On hover, add a brown background color with a little bit see-through */
-.prev:hover, .next:hover {
-  background-color: #312920;
-}
-
 #certif1 {
   width: 250px;
   border-radius: 5px;
@@ -383,8 +348,8 @@ hr {
 
 .billboard-text {
   position: absolute;
-  top: 35%;
-  right: 5%;
+  bottom: 120px;
+  right: 130px;
   background-color: #312921;
   color: white;
   text-align: left;
